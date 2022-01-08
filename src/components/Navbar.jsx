@@ -13,6 +13,8 @@ import {
 import { IoMdLogIn } from "react-icons/io";
 import { FaReact, FaTimes } from "react-icons/fa";
 import { BsThreeDots } from "react-icons/bs";
+import { AiOutlineMenu } from "react-icons/ai";
+
 import { VscDashboard } from "react-icons/vsc";
 
 import { NavLink } from "react-router-dom";
@@ -47,13 +49,13 @@ const Navbar = () => {
     >
       {/* TEST     */}
       <div className={styles.test}>
-        <button
+        <AiOutlineMenu
           onClick={() => {
             setnav(!nav);
           }}
-        >
-          PRESS ME
-        </button>
+        />
+          
+        
       </div>
 
       <nav className={nav ? undefined : styles.nav_small}>
@@ -80,34 +82,30 @@ const Navbar = () => {
           />
 
           <NavUrl
-            url="/analytics"
+            url="/schedule"
             icon={<MdOutlineAnalytics />}
-            description="Analytics"
+            description="Schedule"
           />
 
           <NavUrl
-            url="/campaings"
+            url="/plants"
             icon={<MdOutlineFlag />}
-            description="Campaings"
+            description="Plants"
           />
 
           <NavUrl
-            url="/messages"
+            url="/payment"
             icon={<MdOutlineMessage />}
-            description="Messages"
+            description="Payment"
+          />
+          <NavUrl
+            url="/setting"
+            icon={<MdOutlineMessage />}
+            description="Setting"
           />
 
           {/* SECOND CATEGORY */}
-          <span
-            className={`${styles.categories} 
-          ${styles.second_category}`}
-          >
-            {nav ? "More" : <BsThreeDots />}
-          </span>
-
-          <NavUrl url="/other1" icon={<IoMdLogIn />} description="Auth" />
-
-          <NavUrl url="/other1" icon={<FaReact />} description="ReactJs" />
+         
         </ul>
 
         {/* LOGOUT BUTTON */}

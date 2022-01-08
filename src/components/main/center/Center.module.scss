@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f8f8;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px;
+    
+}
+.container > div {
+    margin-bottom: 20px;
+ 
+}
+
+.CenterUpperBox {
+    width: 100%;
+}
+.CenterMiddleBox {
+    width: 100%;
+}
+.CenterDownBox {
+    width: 100%;
+}
+

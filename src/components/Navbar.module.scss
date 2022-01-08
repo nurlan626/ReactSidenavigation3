@@ -1,11 +1,11 @@
 .navbar_container {
-    --color_nav_bg: rgb(30, 41, 59);
+    --color_nav_bg:  #ffffff;
     --color_nav_txt: rgb(100, 116, 139);
-    --color_nav_ctg: rgb(226, 232, 240);
-    --color_nav_active: rgb(85, 79, 232);
-    --color_nav_not_active: rgb(61, 74, 94);
-    --color_nav_active_bg: rgb(15, 23, 42);
-    --nav-width: 16rem;
+    --color_nav_ctg: grey;
+    --color_nav_active: rgb(1, 97, 104);
+    --color_nav_not_active: grey;
+    --color_nav_active_bg: rgb(255, 255, 255);
+    --nav-width: 10rem;
 
     background: var(--color_nav_bg);
     height: 100vh;
@@ -31,11 +31,14 @@
 
 .test {
     position: fixed;
-    top: 50%;
-    right: -90vw;
+    top: 0;
+    right: -30px;
     z-index: 10;
-    background: red;
-    color: yellow;
+
+    background-color: --color_nav_ctg;
+    padding: 0px;
+
+    font-size: 30px;
 }
 
 nav {
@@ -89,6 +92,8 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
+    
+   
 }
 
 .categories {
@@ -101,9 +106,7 @@ nav {
     }
 }
 
-.second_category {
-    margin-top: 3rem;
-}
+
 
 .li_navlink a {
     display: flex;
@@ -113,10 +116,11 @@ nav {
     text-decoration: none;
     color: var(--color_nav_ctg);
     transition: all ease-in-out 0.2s;
+    margin-bottom: 30px;
 
     .description {
-        margin-left: 0.5rem;
-        font-weight: 400;
+        margin-left: 1rem;
+        font-weight: 600;
         transition: opacity 200ms ease;
     }
 
@@ -128,6 +132,7 @@ nav {
 
     &:hover {
         background: var(--color_nav_active_bg);
+        color: rgb(1, 97, 104);
     }
 
     &:hover svg {

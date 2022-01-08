@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    .leftBox {
+        width: 50%;
+        .h3 {
+            color: black;
+            font-size: 30px;
+        }
+        .leftBoxIMG{
+            width: 90%;
+            text-align: center;
+        }
+    }
+    
+    .rightBox {
+        width: 30%;
+        height: 100%;
+        
+        .image {
+           // height: ;
+            
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        .leftBox {
+            width: 100%;
+            margin-bottom: 20px;
+            
+        
+        }
+        .rightBox {
+            width: 90%;
+            text-align: center;
+            
+        }
+    }
+   
+  }

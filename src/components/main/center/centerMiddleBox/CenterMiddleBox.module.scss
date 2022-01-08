@@ -1,0 +1,36 @@
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.blockLeft{
+    width: 60%;
+    
+
+}
+.blockRight{
+    width: 30%;
+}
+
+h3{
+    color: grey;
+}
+h2 {
+    font-size: 35px;
+}
+@media only screen and (max-width: 600px) {
+    .blocks {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    .blockLeft{
+        width: 100%;
+        
+    
+    }
+    .blockRight{
+        width: 50%;
+    }
+  }

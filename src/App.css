@@ -17,10 +17,16 @@ body {
   --padding-xxs: 0.5rem;
 
   font-family: "Poppins", "sans-serif";
-  overflow: hidden;
+   //overflow: hidden; 
   background: rgb(240, 244, 248);
 }
 
 .App {
   display: flex;
 }
+
+img {
+  width: 100%;
+}
+
+

@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    width:100%;
+}
+.center {
+    width: 65%;
+
+}
+.aside {
+    width: 35%;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .center {
+        width: 100%;
+    }
+    .aside {
+        width: 100%;
+        background-color: grey;
+
+    }
+  }
