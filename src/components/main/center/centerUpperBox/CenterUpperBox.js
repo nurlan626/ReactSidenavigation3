@@ -1,16 +1,24 @@
 import React from 'react'
 import styles from "./CenterUpperBox.module.scss"
-import {IoIosNotificationsOutline} from "react-icons/io"
+import {MdOutlineCircleNotifications} from "react-icons/md"
+import {FiSearch} from "react-icons/fi"
+import logo from './01.png'
+
+
 
 const CenterUpperBox = () => {
     return (
         <div className={styles.container}>
             <div>
-                <input className={styles.input} />
+                <div className={styles.inputBox}>
+                     <FiSearch  className={styles.inputIcon} />
+                     <input className={styles.input} placeholder="Search plant here" />
+                </div>
+               
             </div>
             <div  className={styles.icons}>
-                <span><IoIosNotificationsOutline className={styles.icon} /></span>
-                <span><img src='https://pngset.com/images/default-profile-picture-circle-symbol-logo-trademark-number-transparent-png-890174.png' alt='wewe' className={styles.img}/></span>
+                <span><MdOutlineCircleNotifications className={styles.icon} /></span>
+                <span><img src={logo} alt='wewe' className={styles.img}/></span>
             </div>
         </div>
     )

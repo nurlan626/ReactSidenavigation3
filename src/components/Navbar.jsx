@@ -16,9 +16,13 @@ import { BsThreeDots } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 
 import { VscDashboard } from "react-icons/vsc";
+import { RiGlobalLine } from "react-icons/ri";
+
 
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import logo1 from './01.png'
+import logo2 from './02.png'
 
 const Navbar = () => {
   const [nav, setnav] = useState(false);
@@ -60,13 +64,39 @@ const Navbar = () => {
 
       <nav className={nav ? undefined : styles.nav_small}>
         {/* LOGO */}
-        <div className={styles.logo}>
+
+        {/* <div className={styles.logo}>
           <VscDashboard className={styles.logo_icon} />
           <FaTimes
             className={styles.mobile_cancel_icon}
             onClick={() => setnav(!nav)}
           />
+        </div> */}
+        
+        {nav ? 
+        <div
+        className={styles.btn_logout}
+        onClick={() => {
+          setnav(!nav);
+        }}
+      >
+        <img src={logo1} alt='e'/>
+
+      </div> 
+        : 
+        <div
+        className={styles.btn_logout}
+        onClick={() => {
+          setnav(!nav);
+        }}
+        >
+          <RiGlobalLine />
+        
         </div>
+        }
+        
+
+
 
         {/* SUBMENU */}
         <ul className={styles.menu_container}>
@@ -108,17 +138,18 @@ const Navbar = () => {
          
         </ul>
 
-        {/* LOGOUT BUTTON */}
-        <div
-          className={styles.btn_logout}
-          onClick={() => {
-            setnav(!nav);
-          }}
-        >
-          <MdOutlineLogout />
-        </div>
+        
         {/* ADD BACKGROUND FOR MOBILE */}
+        {nav ? 
+        <div className={styles.sideBarIMGBox}>
+          <img src={logo2} alt='e' className={styles.sideBarIMG} />
+          <div  className={styles.sideBarImgText}>You can manage multiple forms here.</div>
+          <div  className={styles.sideBarImgText2}>+ Add farm</div>
+        </div> 
+        : ""}
+        
       </nav>
+      
     </div>
   );
 };

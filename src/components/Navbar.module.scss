@@ -149,7 +149,7 @@ nav {
 }
 
 .btn_logout {
-    margin-top: auto;
+    margin-top: 0;
     display: flex;
     justify-content: flex-end;
     transition: all ease-in-out 200ms;
@@ -177,5 +177,45 @@ nav {
         svg {
             transform: scaleX(1);
         }
+    }
+}
+
+.sideBarIMGBox {
+    margin-top: auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    .sideBarIMG{
+        border-radius: 20px;
+    }
+    .sideBarImgText{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 15px;
+        width: 90%;
+        font-weight: 700;
+
+    }
+    .sideBarImgText2{
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 15px;
+        width: 95%;
+        font-weight: 700;
+        background-color: rgb(238, 163, 1);
+        width: 100%;
+        padding: 10px;
+        border-bottom-left-radius: 20px 20px;
+        border-bottom-right-radius: 20px 20px;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+
+
     }
 }

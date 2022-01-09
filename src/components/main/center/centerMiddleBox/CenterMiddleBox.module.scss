@@ -1,16 +1,3 @@
-.blocks {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-.blockLeft{
-    width: 60%;
-    
-
-}
-.blockRight{
-    width: 30%;
-}
 
 h3{
     color: grey;
@@ -18,19 +5,68 @@ h3{
 h2 {
     font-size: 35px;
 }
+
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    .blockLeft{
+        width: 50%;
+    }
+    .blockRight{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .blockRightBox {
+            border-radius: 20px;
+            background-color: #c6e464;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            margin-bottom: 20px;
+            .blockRightImg{
+                width: 50px;
+                height: 50px;;
+            }
+            .title {
+                font-size: 15px;
+            }
+            .text {
+                font-size: 15px;
+                font-weight: 700 ;
+            }
+            .middleBox {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+        }
+    }
+}
+
+
+
 @media only screen and (max-width: 600px) {
     .blocks {
+        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        min-width: 100%;
      
     }
     .blockLeft{
-        width: 100%;
-        
+        min-width: 100%;
+        margin-bottom: 20px;       
     
     }
     .blockRight{
-        width: 50%;
+        min-width: 100%;
+        .blockRightBox {
+            margin-bottom: 20px;
+        }
     }
   }
