@@ -17,6 +17,7 @@ const CenterMiddleBox = () => {
                       <img src={img01} alt="wew" />
                 </div>
                 <div className={styles.blockRight}>
+
                     <div className={styles.blockRightBox}>
                       <img src={img03} alt="wew" className={styles.blockRightImg}/>
                       <div className={styles.middleBox}>
@@ -25,21 +26,23 @@ const CenterMiddleBox = () => {
                         </div>
                         <div>...</div>
                     </div>
-                    <div className={styles.blockRightBox}>
-                      <img src={img03} alt="wew" className={styles.blockRightImg}/>
+
+                    <div className={styles.blockRightBox} style={{backgroundColor: "white"}}>
+                      <img src={img04} alt="wew" className={styles.blockRightImg2}/>
                       <div className={styles.middleBox}>
-                          <div className={styles.title}>Height piants</div>
-                          <div className={styles.text}>4.3 sm</div>
+                          <div className={styles.title}>Water Quality</div>
+                          <div className={styles.text}>40%</div>
                         </div>
                         <div>...</div>
                     </div>
-                    <div className={styles.blockRightBox}>
-                      <img src={img03} alt="wew" className={styles.blockRightImg}/>
+                    <div className={styles.blockRightBox}  style={{backgroundColor: "white"}}>
+                      <img src={img05} alt="wew" className={`${styles.blockRightImg2} ${styles.white}`}/>
                       <div className={styles.middleBox}>
-                          <div className={styles.title}>Height piants</div>
-                          <div className={styles.text}>4.3 sm</div>
+                          <div className={styles.title}>Age piants</div>
+                          <div className={styles.text}>2 Week</div>
                         </div>
                         <div>...</div>
+
                     </div>
                   
 
